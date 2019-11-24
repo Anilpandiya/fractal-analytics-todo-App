@@ -1,0 +1,23 @@
+.bucket__form {
+  margin-bottom: 5em;  
+}
+
+.bucket__component {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 0.5em ;
+  }
+
+.bucket__text {
+    margin: 1em 0;
+  font-size: large;
+    opacity: 1;
+  }
+  
+/* .bucket__text:hover {
+   margin: 0.5em 0;
+  font-size: x-large;
+  cursor: pointer;
+  background: #787878;
+  } */

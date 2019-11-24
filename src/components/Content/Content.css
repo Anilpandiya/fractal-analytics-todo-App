@@ -1,0 +1,18 @@
+.main__content {
+  background-color: #f3c68a;
+  padding:1em;
+  margin-bottom: 1em;
+}
+.row__head {
+  justify-content: space-around;
+}
+.content__todos {
+  margin: 1em 0 1em 0;
+}
+
+.content__todos__li {
+  opacity: 0;
+  margin-bottom: 0.7em;
+  animation: fadeIn 0.3s 1;
+  animation-fill-mode: forwards;
+}
