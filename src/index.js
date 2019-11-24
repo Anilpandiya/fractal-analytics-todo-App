@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import AppReducer from './reducers';
-import registerServiceWorker from './registerServiceWorker';
 
 // Third-party declarations.
 import 'bootswatch/dist/flatly/bootstrap.min.css';
@@ -12,7 +11,7 @@ import 'bootswatch/dist/flatly/bootstrap.min.css';
 import './stylesheets/index.css';
 import './stylesheets/animations.css';
 
-import AppContainer from './containers/AppContainer';
+import App from './components/Layout/App.jsx';
 
 const store = createStore(
     AppReducer,
@@ -21,9 +20,7 @@ const store = createStore(
 
 ReactDOM.render(
     <Provider store={store}>
-        <AppContainer />
+        <App />
     </Provider>,
-    document.getElementById('app'),
+    document.getElementById('root'),
 );
-
-registerServiceWorker();
